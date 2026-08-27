@@ -32,12 +32,12 @@ Pour récupérer le code des collègues.
 
 Créer la base de données:
 ```bash
-createdb -U <ton_user> -E UTF8 gestion_tournois_mc
+createdb -U postgres -E UTF8 gestion_tournois_mc
 ```
 
 Créer les tables:
 ```bash
-psql -U <ton_user> -d gestion_tournois_mc -f create_database.sql
+psql -U postgres -d gestion_tournois_mc -f create_database.sql
 ```
 
 Vérifier:
@@ -47,7 +47,7 @@ psql -U postgres -d gestion_tournois_mc
 # \d match         -- détail d'une table + contraintes
 # \di              -- les index
 ```
-
+*
 ### Les rôles
 - Chef de projet: Damien
 - Git Master: Malo
