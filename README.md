@@ -5,6 +5,7 @@
 ```bash
 git clone https://github.com/ReuS-SIO/Gestion-Tournois-Minecraft
 cd Gestion-Tournois-Minecraft
+code .
 ```
 
 ### Les rôles
