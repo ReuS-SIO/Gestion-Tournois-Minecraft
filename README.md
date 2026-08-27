@@ -28,6 +28,26 @@ git pull origin
 ```
 Pour récupérer le code des collègues.  
 
+#### Créer la base de données pour l'environnement de dev
+
+Créer la base de données:
+```bash
+createdb -U <ton_user> -E UTF8 gestion_tournois_mc
+```
+
+Créer les tables:
+```bash
+psql -U <ton_user> -d gestion_tournois_mc -f create_database.sql
+```
+
+Vérifier:
+```bash
+psql -U postgres -d gestion_tournois_mc
+# \dt              -- liste les 7 tables
+# \d match         -- détail d'une table + contraintes
+# \di              -- les index
+```
+
 ### Les rôles
 - Chef de projet: Damien
 - Git Master: Malo
