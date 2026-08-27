@@ -15,11 +15,18 @@ git remote add fork <URL DE TON REPO FORKé>
 code .
 ```
 
-Pour push toçn code sur ton fork utilise:
+Pour push ton code sur ton fork utilise:
 ```bash
 git push fork
 ```
 Ensuite il faut créer une pull request pour que Malo puisse accepter ou non les changements.
+
+**ATTENTION**: 
+Dès qu'un changement à lieu sur le repo original (ReuS-SIO/Gestion-Tournois-Minecraft), il faut impérativement utiliser la commande:
+```bash 
+git pull origin
+```
+Pour récupérer le code des collègues.  
 
 ### Les rôles
 - Chef de projet: Damien
