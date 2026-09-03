@@ -19,6 +19,7 @@ Pour push ton code sur ton fork utilise:
 ```bash
 git push fork
 ```
+ss
 Ensuite il faut créer une pull request pour que Malo puisse accepter ou non les changements.
 
 **ATTENTION**: 
