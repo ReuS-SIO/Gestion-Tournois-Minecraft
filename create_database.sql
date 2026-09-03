@@ -105,6 +105,15 @@ CREATE TABLE participation (
     REFERENCES equipe(id_equipe) ON DELETE CASCADE
 );
 
+CREATE TABLE RESULTAT_MATCH (
+  id_match UUID PRIMARY KEY,
+  score_equipe1 INT DEFAULT 0,
+  score_equipe2 INT DEFAULT 0,
+  resultat VARCHAR(20),
+  CONSTRAINT fk_resultat_match FOREIGN KEY (id_match)
+    REFERENCES match(id_match) ON DELETE CASCADE
+);
+
 -- ============================================
 -- Index suggérés pour les clés étrangères
 -- ============================================
