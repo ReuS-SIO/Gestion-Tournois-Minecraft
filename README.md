@@ -55,3 +55,5 @@ psql -U postgres -d gestion_tournois_mc
 - Back-end: Ethan M, Elyakim, Ethan N, Gaël
 - Front-end: Axel, Nicolas, Walu, Sosefo
 - Testeur + Doc: Daniel
+
+coucou
