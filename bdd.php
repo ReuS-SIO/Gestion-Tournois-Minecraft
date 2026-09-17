@@ -1,10 +1,10 @@
 <?php
 
-$DB_HOST = getenv('DB_HOST') ?: 'db';
+$DB_HOST = getenv('DB_HOST') ?: 'localhost';
 $DB_PORT = getenv('DB_PORT') ?: '5432';
 $DB_NAME = getenv('DB_NAME') ?: 'gestion_tournois';
 $DB_USER = getenv('DB_USER') ?: 'postgres';
-$DB_PASS = getenv('DB_PASS') ?: 'postgres';
+$DB_PASS = getenv('DB_PASS') ?: '0000';
 
 try {
     $pdo = new PDO(
