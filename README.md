@@ -29,7 +29,7 @@ git pull origin dev
 ```
 Pour récupérer le code des collègues.  
 
-#### Créer la base de données pour l'environnement de dev
+# Créer la base de données pour l'environnement de dev
 
 Créer la base de données:
 ```bash
@@ -48,7 +48,26 @@ psql -U postgres -d gestion_tournois_mc
 # \d match         -- détail d'une table + contraintes
 # \di              -- les index
 ```
-*
+
+# Pour reset à 0 la database
+
+Supprimer la base (toutes les données sont perdues) puis la recréer:
+```bash
+dropdb -U postgres gestion_tournois_mc
+createdb -U postgres -E UTF8 gestion_tournois_mc
+psql -U postgres -d gestion_tournois_mc -f create_database.sql
+```
+
+Si `dropdb` refuse parce que la base est utilisée, fermer les connexions ouvertes (serveur PHP, psql, pgAdmin) et réessayer. En dernier recours:
+```bash
+dropdb -U postgres --force gestion_tournois_mc
+```
+
+Pour vider les tables sans supprimer la base:
+```bash
+psql -U postgres -d gestion_tournois_mc -c "TRUNCATE resultat_match, participation, inscription, match, joueur, equipe, tournoi, carte, arbitre CASCADE;"
+```
+
 ### Les rôles
 - Chef de projet: Damien
 - Git Master: Malo
