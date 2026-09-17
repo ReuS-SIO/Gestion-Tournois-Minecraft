@@ -1,6 +1,22 @@
 <?php
 
-$DB_HOST = getenv('DB_HOST') ?: 'db';
+/* Fonction pour verifier ou se trouve la DB (wsl/windows) */
+function detectDbHost(): string
+{
+    $isWsl = is_readable('/proc/version')
+        && stripos((string) file_get_contents('/proc/version'), 'microsoft') !== false;
+
+    if ($isWsl) {
+        $gateway = trim((string) shell_exec("ip route show default 2>/dev/null | awk '{print \$3}' | head -n1"));
+        if ($gateway !== '') {
+            return $gateway;
+        }
+    }
+
+    return 'localhost';
+}
+
+$DB_HOST = getenv('DB_HOST') ?: detectDbHost();
 $DB_PORT = getenv('DB_PORT') ?: '5432';
 $DB_NAME = getenv('DB_NAME') ?: 'gestion_tournois';
 $DB_USER = getenv('DB_USER') ?: 'postgres';
