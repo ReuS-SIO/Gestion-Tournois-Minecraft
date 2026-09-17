@@ -7,6 +7,7 @@ $estConnecte = isset($_SESSION['id_joueur']);
 <head>
     <meta charset="UTF-8">
     <title>MSIO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button><a href="/classement.php">Classement</a></button>

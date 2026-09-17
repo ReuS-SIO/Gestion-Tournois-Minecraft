@@ -25,17 +25,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <h1>Connexion</h1>
-
+ 
 <?php if ($error): ?>
     <div class="alert alert-error"><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></div>
 <?php endif; ?>
-
+ 
 <form method="POST" action="/login.php">
     <label>pseudo</label>
     <input type="text" name="pseudo" required>
     <label>Mot de passe</label>
     <input type="password" name="password" required>
     <button type="submit">Se connecter</button>
-    <p class="muted"><a href="/mot_depasseoublié.php"> Mot de passe oublié ?</a></p>
+    <p class="muted"><a href="/mot_depasseoublié.php"> Mot de passe oublié ?</p>
 </form>
 <p class="muted">Pas de compte ? <a href="/signup.php">Inscrivez-vous</a>.</p>
