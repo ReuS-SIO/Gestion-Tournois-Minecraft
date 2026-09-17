@@ -20,7 +20,7 @@ $DB_HOST = getenv('DB_HOST') ?: detectDbHost();
 $DB_PORT = getenv('DB_PORT') ?: '5432';
 $DB_NAME = getenv('DB_NAME') ?: 'gestion_tournois_mc';
 $DB_USER = getenv('DB_USER') ?: 'postgres';
-$DB_PASS = getenv('DB_PASS') ?: 'postgres';
+$DB_PASS = getenv('DB_PASS') ?: 'ME_CHANGER'; # MET TON MDP À TOI :)
 
 try {
     $pdo = new PDO(
