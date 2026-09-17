@@ -25,7 +25,7 @@ Ensuite il faut créer une pull request pour que Malo puisse accepter ou non les
 **ATTENTION**: 
 Dès qu'un changement à lieu sur le repo original (ReuS-SIO/Gestion-Tournois-Minecraft), il faut impérativement utiliser la commande:
 ```bash 
-git pull origin
+git pull origin dev
 ```
 Pour récupérer le code des collègues.  
 
