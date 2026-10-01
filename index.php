@@ -11,7 +11,7 @@ $estConnecte = isset($_SESSION['id_joueur']);
 </head>
 <body>
     <button><a href="/classement.php">Classement</a></button>
-    <button><a href="/login.php">Connexion</a></button>
+    <button><a href="/signin.php">Connexion</a></button>
     <button><a href="/tournoi.php">Tournois</a></button>
     <button><a href="/equipe.php">Équipe</a></button>
 </body>

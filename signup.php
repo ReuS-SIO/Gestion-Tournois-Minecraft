@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
         <h1>Créer un compte joueur</h1>
-    <form method="POST" action="traitement.php">
+    <form method="POST" action="">
         <label>Pseudo:</label>
         <input type="text" name="pseudo">
         <br><br>
