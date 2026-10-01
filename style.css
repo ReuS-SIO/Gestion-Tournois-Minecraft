@@ -1,26 +1,62 @@
-@import url('https://fonts.google.com/share?selection.family=Pixelify+Sans:wght@400..700');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 :root {
     --title: grey;
     --text: white;
-    --header-bg: rgba(110, 110, 110, 0.418);
+    --header-bg: rgb(88, 88, 88);
     --font: 'Pixelify Sans', sans-serif;
+    --border: rgb(43, 42, 42);
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
-    color: var(--text)
+    color: var(--text);
+    font-family: var(--font);
 }
 body {
     font-size: 16px;
     font-family: var(--font);
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 nav a {
-    font-size: 20px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 0;
+    text-decoration: none;
+    border: 2px solid var(--border);
+}
+
+.index {
+    background-image: url('decor3\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: var(--header-bg);
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
 }
