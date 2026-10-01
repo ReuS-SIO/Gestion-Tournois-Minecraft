@@ -9,10 +9,17 @@ $estConnecte = isset($_SESSION['id_joueur']);
     <title>MSIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <button><a href="/classement.php">Classement</a></button>
-    <button><a href="/signin.php">Connexion</a></button>
-    <button><a href="/tournoi.php">Tournois</a></button>
-    <button><a href="/equipe.php">Équipe</a></button>
+<body class="index">
+    <header>
+        <h1>MSIO</h1>
+        <nav>
+           <ul>
+                <li><a href="/equipe.php">Equipe</a></li>
+                <li><a href="/classement.php">Classement</a></li>
+                <li><a href="/tournoi.php">Tournoi</a></li>
+                <li><a href="/login.php">Connexion</a></li>
+           </ul> 
+        </nav> 
+    </header>
 </body>
 </html>
